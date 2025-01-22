@@ -3,15 +3,15 @@
 Basic project to interact with data contained in a remote data source.
 
 
-Name: 
+Name: Ciaran Burr
 
 ### Timeline
 
-Start Date: 
+Start Date: 1/20
 
 Finish Date: 
 
-Hours Spent:
+Hours Spent: 9-
 
 
 ### Resources Used
