@@ -1,5 +1,0 @@
-When I do a merge, should merge the main branch into the branch I am currently working in, then merge to main
-
-This way I avoid deleting a working main branch. Or maybe even a new branch to merge onto, just delete it post merge
-
-I keep merging into main-becuase it is just me. In the actual project, I would merge to development, debug, then merge to main
