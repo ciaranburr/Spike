@@ -1,5 +1,12 @@
+import { useNavigate } from 'react-router-dom';
+
 export const AfcChampionship = () => {
+    const navigate = useNavigate();
+
     return(
-        <p>hello</p>
+        <div>
+            <p>hello</p>
+            <button onClick={() => navigate('/')}>Predict again</button>
+        </div>        
     );
 }
