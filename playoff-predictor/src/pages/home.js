@@ -7,7 +7,7 @@ import bills from '../images/bills.png';
 import commanders from '../images/commanders.avif';
 import eagles from '../images/eagles.png';  
 
-import './styles/home.css'; // Import the CSS file
+import './styles/home.css'; // imports css
 
 export const Home = () => {
     const navigate = useNavigate(); // use the hook to define navigate
@@ -22,7 +22,7 @@ export const Home = () => {
 
     return (
         <div className="outer-container">
-            {loading ? ( //if we clicked (are loading), show it
+            {loading ? ( //if we clicked (are loading), show it. loading idea: https://chatgpt.com/c/67906e63-5cec-8011-8867-ab6f29c18606
                 <div> 
                     <Loading /> 
                     <p>Calculating...</p>
