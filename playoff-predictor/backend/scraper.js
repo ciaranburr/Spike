@@ -1,9 +1,10 @@
 {/*https://www.youtube.com/watch?v=5YCuUCRS_Ks*/}
-const axios = require('axios') 
+const axios = require('axios');
 {/*http library used for requests*/}
-const cheerio = require('cheerio')
+const cheerio = require('cheerio');
 {/*way to pass in html string, navigate, grab right info*/}
-const express = require('express')
+const express = require('express');
+const cors = require('cors') // Import CORS middleware
 
 async function getScores(){
     try{
@@ -60,7 +61,11 @@ async function getScores(){
 {/*https://chatgpt.com/c/6799c4dc-ce14-8011-9094-65f617b7e5a0 used to help figure out how to launch react app and scraper at the same time*/}
 
 //express server
-const app = express()
+// Enable CORS for all origins (you can restrict to specific origins if needed)
+const app = express();
+app.use(cors()); // Allow all origins by default
+// If you want to restrict to localhost:3000 specifically:
+// app.use(cors({ origin: 'http://localhost:3000' }));
 const port = 5001;  // Port for the backend server
 
 //endpoint for gamescores
