@@ -16,7 +16,7 @@ export const AfcChampionship = () => {
         useEffect(() => {
             const fetchScores = async () => {
                 try {
-                    const response = await fetch('http://localhost:5001/api/gamescore');
+                    const response = await fetch('GAME_SCORES'); //https://spike-vddi.onrender.com/api/gamescore
                     const data = await response.json();
                     // only bills chiefs
                     const billsChiefsGame = data.result.find(game => 

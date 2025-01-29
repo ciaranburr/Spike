@@ -14,7 +14,7 @@ export const NfcChampionship = () => {
         useEffect(() => {
             const fetchScores = async () => {
                 try {
-                    const response = await fetch('http://localhost:5001/api/gamescore');
+                    const response = await fetch('GAME_SCORES');
                     const data = await response.json();
                     // only bills chiefs
                     const comEaglesGame = data.result.find(game => 
