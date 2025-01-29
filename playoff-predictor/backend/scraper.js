@@ -63,7 +63,10 @@ async function getScores(){
 //express server
 // Enable CORS for all origins (you can restrict to specific origins if needed)
 const app = express();
-app.use(cors()); // Allow all origins by default
+const corsOptions ={
+    origin: 'https://ciaranburrplayoffpredictor.netlify.app/',
+}
+app.use(cors(corsOptions)); // Allow all origins by default
 // If you want to restrict to localhost:3000 specifically:
 // app.use(cors({ origin: 'http://localhost:3000' }));
 const port = 5001;  // Port for the backend server
